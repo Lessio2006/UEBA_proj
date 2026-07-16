@@ -1,0 +1,98 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# IDE and OS files
+# =========================
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Local configuration
+# =========================
+config.yaml
+.env
+.env.*
+!.env.example
+!config.example.yaml
+
+# =========================
+# Private raw data
+# =========================
+data/raw/*
+!data/raw/.gitkeep
+
+# =========================
+# Private processed data
+# =========================
+data/processed/*
+!data/processed/.gitkeep
+
+# =========================
+# Private test sessions
+# =========================
+data/test/*
+!data/test/.gitkeep
+
+# =========================
+# Public synthetic examples
+# =========================
+# Files inside data/sample/ may be committed intentionally.
+# Do not place real user data in this directory.
+
+# =========================
+# Models and preprocessing artifacts
+# =========================
+models/*
+!models/.gitkeep
+
+# =========================
+# Runtime logs
+# =========================
+logs/*
+!logs/.gitkeep
+*.log
+
+# =========================
+# Private reports
+# =========================
+reports/private/*
+!reports/private/.gitkeep
+
+# =========================
+# Generated plots
+# =========================
+plots/*
+!plots/.gitkeep
+
+# =========================
+# Temporary and backup files
+# =========================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
