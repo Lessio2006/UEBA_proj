@@ -96,3 +96,7 @@ plots/*
 *.swo
 ~$*
 
+# ======
+# Logs
+# ======
+logs/collector.log
