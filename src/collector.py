@@ -543,7 +543,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--output",
-        default="data/raw/metrics_30s.csv",
+        default="example_path.csv",  # Input path
         help="Path to the private CSV dataset.",
     )
     parser.add_argument(
