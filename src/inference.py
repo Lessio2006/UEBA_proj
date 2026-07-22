@@ -143,13 +143,7 @@ def preprocess(df: pd.DataFrame, bundle: dict) -> np.ndarray:
 
     return x_scaled.astype(np.float32)
 
-def predict_anomaly(
-    df: pd.DataFrame,
-    model: VariationalAE,
-    bundle: dict,
-    device="cpu"
-) -> pd.DataFrame:
-
+def predict_anomaly(df: pd.DataFrame, model: VariationalAE, bundle: dict, device="cpu") -> pd.DataFrame:
     x_scaled = preprocess(
         df,
         bundle
