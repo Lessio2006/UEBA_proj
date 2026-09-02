@@ -1,0 +1,38 @@
+project:
+  name: "UEBA_proj"
+  offline_mode: true
+
+collection:
+  system_interval_seconds: 10
+  network_interval_seconds: 10
+  event_log_interval_seconds: 30
+  aggregation_window_seconds: 60
+  training_collection_hours: 24
+
+privacy:
+  collect_usernames: false
+  collect_process_names: false
+  collect_command_lines: false
+  collect_remote_ips: false
+  collect_file_paths: false
+  collect_event_messages: false
+  collect_packet_contents: false
+
+sources:
+  system_metrics: true
+  network_metrics: true
+  windows_security_log: true
+  microsoft_defender_log: true
+  sysmon_log: false
+
+storage:
+  raw_directory: "data/raw"
+  processed_directory: "data/processed"
+  test_directory: "data/test"
+  models_directory: "models"
+  logs_directory: "logs"
+  private_reports_directory: "reports/private"
+
+security:
+  allow_external_requests: false
+  localhost_only_test_network: true
